@@ -26,25 +26,53 @@
 .top-controls {
   display: flex;
   align-items: center;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   height: 25%;
 }
 .volume-controls {
-  width: 40%;
-}
-.playback-controls {
-  width: 20%;
-}
-.size-controls {
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.playback-controls {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+.size-controls {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .bottom-controls {
   background-color: rgb(77, 76, 76);
+  width: 100%;
   display: flex;
   align-items: center;
   height: 25%;
   justify-content: center;
   margin-top: 10px;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+button {
+  width: 80%;
+  border: 0;
+  background-color: transparent;
+}
+input[type="range"] {
+  width: 420px;
+  height: 2px;
+  background: black;
+  border: none;
+  outline: none;
 }
